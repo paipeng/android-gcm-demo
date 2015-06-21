@@ -2,7 +2,12 @@ apply plugin: 'com.android.application'
 
 android {
     signingConfigs {
-        
+        ownKey {
+            keyAlias 'gcm-tester'
+            keyPassword 'gcm-tester_berlin_2015'
+            storeFile file('/Users/paipeng/Development/android_keys/com.paipeng.gcm-tester.jks')
+            storePassword 'gcm-tester_berlin_2015'
+        }
     }
     compileSdkVersion 22
     buildToolsVersion "22.0.1"
